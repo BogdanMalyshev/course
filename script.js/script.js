@@ -38,15 +38,21 @@ if(personalMovieDB.count < 10 ){
     alert('Произошла ошибка((');
 }
 
-for(let i = 0; i<2; i++){
+
+let i = 0;
+i++;  
+while(i<2){
+  
+    console.log(i);
     let a = prompt('Один из последних просмотренных фильмов?'),
         b = prompt('На сколько оцените его?');
     if(a != null && b != null && a != "" && b != "" && a.length < 50 ){
         personalMovieDB.movies[a] = b;
-        console.log('done');
+        console.log('1');
     }else{
+
+        console.log('2');
         i--;
-        console.log('error');
     }
 }
  
