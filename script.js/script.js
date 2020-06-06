@@ -39,14 +39,12 @@ if(personalMovieDB.count < 10 ){
 }
 
 
-let i = 0;
-
-while(i<2){
-    i++;  
-    let a = prompt('Один из последних просмотренных фильмов?'),
-        b = prompt('На сколько оцените его?');
-    if(a != null && b != null && a != "" && b != "" && a.length < 50 ){
-        personalMovieDB.movies[a] = b;
+for(let i = 0; i<2; i++ ){
+    let a = "Какой последний фильм вы посмотрели?",
+        b = "Какую оценку вы дадите этому фильму?";
+    
+    if(a != null && b != null && a != "" && b != "" && a.length < 50){
+        personalMovieDB.count[a]=b;
         console.log('done');
     }else{
 
