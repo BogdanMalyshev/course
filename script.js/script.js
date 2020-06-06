@@ -40,18 +40,17 @@ if(personalMovieDB.count < 10 ){
 
 
 let i = 0;
-i++;  
+
 while(i<2){
-  
-    console.log(i);
+    i++;  
     let a = prompt('Один из последних просмотренных фильмов?'),
         b = prompt('На сколько оцените его?');
     if(a != null && b != null && a != "" && b != "" && a.length < 50 ){
         personalMovieDB.movies[a] = b;
-        console.log('1');
+        console.log('done');
     }else{
 
-        console.log('2');
+        console.log('error');
         i--;
     }
 }
