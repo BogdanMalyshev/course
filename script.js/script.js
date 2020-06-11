@@ -8,6 +8,7 @@ function start(){
     }
 }
 start();
+
 const personalMovieDB = {
     count: numberOfFilms,
     movies:{},
@@ -25,8 +26,7 @@ function yourStatus(){
         alert('Да вы жуткий киноман!!');
     }else{
         alert('Произошла ошибка((');
-    }
-    
+    } 
 }
 yourStatus();
 
@@ -53,9 +53,6 @@ function myDataBase(hidden) {
     }
 }
 myDataBase(personalMovieDB.privat);
- 
-
-
 
 
 function writeYourGeners() {
