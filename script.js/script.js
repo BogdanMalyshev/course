@@ -55,7 +55,7 @@ function myDataBase(hidden) {
 myDataBase(personalMovieDB.privat);
 
 
-function writeYourGeners() {
+function writeYourGeners(){
     for (let i = 1; i <=3; i++) {
         let geners = prompt(`Ваш любимий жанр под номером ${i}`);
         if (geners!== " " && geners !== null && isNaN(geners)) {
@@ -67,4 +67,5 @@ function writeYourGeners() {
         }
     }
 }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
 writeYourGeners();
